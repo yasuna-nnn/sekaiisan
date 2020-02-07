@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>世界遺産ギャラリー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Webフォント -->
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-info">
+    <!-- ホームへ戻るリンク。 -->
+    <a href="#" class="navbar-brand" area-label="ホーム">
+          <i class="fas fa-globe-americas" aria-hidden="true"></i>
+        </a>
+
+    <!-- 横幅が狭い時に出るハンバーガーボタン -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+    <!-- メニュー項目 -->
+    <div class="collapse navbar-collapse" id="nav-bar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">トップ</a></li>
+        <li class="nav-item"><a href="#asia" class="nav-link">アジア</a></li>
+        <li class="nav-item"><a href="#europe" class="nav-link">ヨーロッパ</a></li>
+        <li class="nav-item"><a href="#africa" class="nav-link">アフリカ</a></li>
+        <li class="nav-item"><a href="#s-america" class="nav-link">南米</a></li>
+        <li class="nav-item"><a href="#oceania" class="nav-link">オセアニア</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--トップ画面カルーセル-->
+  <div class="carousel">
+    <ul class="slides">
+      <li><img src="images/kerun.jpg" width="800" height="400" alt="メイン1"></li>
+      <li><img src="images/angkorwat.jpg" width="800" height="400" alt="メイン2"></li>
+      <li><img src="images/tajmahal.jpg" width="800" height="400" alt="メイン3"></li>
+      <li><img src="images/machupichu.jpg" width="800" height="400" alt="メイン4"></li>
+    </ul>
+    <a href="#" class="carousel-control carousel-control-prev inactive">&lt;</a>
+    <a href="#" class="carousel-control carousel-control-next inactive">&gt;</a>
+    <div class="box">
+    <h2>世界遺産Gallery</h2>
+    </div>
+  </div>
+
+  <!--ここから世界遺産紹介-->
+  <!-- アジア -->
+  <section id="asia" class="asia">
+    <div class="asia__phrase animated">アジアの世界遺産</div>
+    <h2 class="asia__title animated">Asia</h2>
+    <div class="showcase showcase--rightpic container-fluid tabs animated">
+      <div class="row">
+
+        <!-- 拡大写真 -->
+        <div class="tabs__content col-md-6 text-center">
+          <div class="asia-1">
+            <img class="img-fluid rounded" src="images/tajmahal.jpg" width="500" height="500" alt="タージマハル">
+          </div>
+          <div class="asia-2">
+            <img class="img-fluid rounded" src="images/angkorwat.jpg" width="500" height="500" alt="アンコールワット">
+          </div>
+          <div class="asia-3">
+            <img class="img-fluid rounded" src="images/bannri.jpg" width="500" height="500" alt="万里の長城">
+          </div>
+        </div>
+        <!--/.tabs__content -->
+
+        <!-- サムネイルと説明文 -->
+        <div class="col-md-6 mt-2 mt-md-0">
+
+          <!-- サムネイル -->
+          <ul class="showcase__thumbnails tabs__menu">
+            <li><a href="#asia-1"><img class="rounded" src="images/tajmahal.jpg" width="60" height="60" alt="タージマハル"></a>
+            </li>
+            <li><a href="#asia-2"><img class="rounded" src="images/angkorwat.jpg" width="60" height="60" alt="アンコールワット"></a>
+            </li>
+            <li><a href="#asia-3"><img class="rounded" src="images/bannri.jpg" width="60" height="60" alt="万里の長城"></a>
+            </li>
+          </ul>
+          <!--/.showcase__thumbnails -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content">
+            <section id="asia-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">タージマハル</h3>
+                <p class="showcase__kind-description">
+                  インド北部アーグラにある、ムガル帝国第5代皇帝シャー・ジャハーンが、1631年に死去した愛妃ムムターズ・マハルのため建設した総大理石の墓廟。
+                </p>
+              </div>
+            </section>
+            <section id="asia-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">アンコールワット</h3>
+                <p class="showcase__kind-description">
+                  アンコール・ワットは12世紀前半、当時のアンコール王朝のスリーヴァルマン2世によって、30年を越える歳月を費やして建立されたヒンドゥ教寺院。
+                </p>
+              </div>
+            </section>
+            <section id="asia-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">万里の長城</h3>
+                <p class="showcase__kind-description">
+                  中国が統一された秦の始皇帝の時代に、「匈奴」の侵略から領土を守るために建設され、その後、城壁は拡大と延長を繰り返し、明朝の時代に完成したといわれている。
+                </p>
+              </div>
+            </section>
+
+          </div>
+          <!--/.tabs__content -->
+        </div>
+        <!--/.col-md-6 -->
+
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.showcase -->
+  </section>
+  <!--/.asia -->
+
+  <!-- ヨーロッパ -->
+  <section id="europe" class="europe">
+    <div class="europe__phrase animated">ヨーロッパの世界遺産</div>
+    <h2 class="europe__title animated">Europe</h2>
+    <div class="showcase showcase--leftpic container-fluid tabs animated">
+      <div class="row">
+
+        <!-- 拡大写真 -->
+        <div class="tabs__content col-md-6 order-md-last text-center">
+          <div class="europe-1">
+            <img class="img-fluid rounded" src="images/kerun.jpg" width="500" height="500" alt="ケルン">
+          </div>
+          <div class="europe-2">
+            <img class="img-fluid rounded" src="images/monsan.jpg" width="500" height="500" alt="モンサンミッシェル">
+          </div>
+          <div class="europe-3">
+            <img class="img-fluid rounded" src="images/puraha.jpg" width="500" height="500" alt="プラハ">
+          </div>
+        </div>
+        <!--/.tabs__content -->
+
+        <!-- サムネイルと説明文 -->
+        <div class="col-md-6 mt-2 mt-md-0">
+
+          <!-- サムネイル -->
+          <ul class="showcase__thumbnails tabs__menu">
+            <li><a href="#europe-1"><img class="rounded" src="images/kerun.jpg" width="60" height="60" alt="ケルン"></a>
+            </li>
+            <li><a href="#europe-2"><img class="rounded" src="images/monsan.jpg" width="60" height="60" alt="モンサンミッシェル"></a>
+            </li>
+            <li><a href="#europe-3"><img class="rounded" src="images/puraha.jpg" width="60" height="60" alt="プラハ"></a>
+            </li>
+          </ul>
+          <!--/.showcase__thumbnails -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content">
+            <section id="europe-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ケルン大聖堂</h3>
+                <p class="showcase__kind-description">
+                  ドイツのケルンにあるケルン大聖堂は、ゴシック様式の最大の建築物。荘厳な作りの２つの塔が特徴。
+                </p>
+              </div>
+            </section>
+            <section id="europe-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">モンサンミッシェル</h3>
+                <p class="showcase__kind-description">
+                  モンサンミッシェルは、サン・マロ湾上の小島に浮かぶ修道院。フランスにあるカトリックの巡礼地の一つ。
+                </p>
+              </div>
+            </section>
+            <section id="europe-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">プラハ歴史地区</h3>
+                <p class="showcase__kind-description">
+                  チェコにあるプラハ歴史地区は、ヨーロッパで最も古い都市であり、９世紀頃から文化の中心地。
+                </p>
+              </div>
+            </section>
+
+          </div>
+          <!--/.tabs__content -->
+        </div>
+        <!--/.col-md-6 -->
+
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.showcase -->
+  </section>
+  <!--/.europe -->
+
+  <!-- アフリカ -->
+  <section id="africa" class="africa">
+    <div class="africa__phrase animated">アフリカの世界遺産</div>
+    <h2 class="africa__title animated">Africa</h2>
+    <div class="showcase showcase--rightpic container-fluid tabs animated">
+      <div class="row">
+
+        <!-- 拡大写真 -->
+        <div class="tabs__content col-md-6 text-center">
+          <div class="africa-1">
+            <img class="img-fluid rounded" src="images/victoria.jpg" width="500" height="500" alt="ヴィクトリアの滝">
+          </div>
+          <div class="africa-2">
+            <img class="img-fluid rounded" src="images/erujem.jpg" width="500" height="500" alt="エルジェム">
+          </div>
+          <div class="africa-3">
+            <img class="img-fluid rounded" src="images/kairo.jpg" width="500" height="500" alt="カイロ">
+          </div>
+        </div>
+        <!--/.tabs__content -->
+
+        <!-- サムネイルと説明文 -->
+        <div class="col-md-6 mt-2 mt-md-0">
+
+          <!-- サムネイル -->
+          <ul class="showcase__thumbnails tabs__menu">
+            <li><a href="#africa-1"><img class="rounded" src="images/victoria.jpg" width="60" height="60" alt="ヴィクトリアの滝"></a>
+            </li>
+            <li><a href="#africa-2"><img class="rounded" src="images/erujem.jpg" width="60" height="60" alt="エルジェム"></a>
+            </li>
+            <li><a href="#africa-3"><img class="rounded" src="images/kairo.jpg" width="60" height="60" alt="カイロ"></a>
+            </li>
+          </ul>
+          <!--/.showcase__thumbnails -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content">
+            <section id="africa-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ヴィクトリアの滝</h3>
+                <p class="showcase__kind-description">
+                  ヴィクトリアの滝は、ジンバブエ共和国とザンビア共和国の国境に位置する、幅2km、落差108mの大瀑布。ナイアガラの滝、イグアスの滝と並んで「世界三大瀑布」に数えられる。
+                </p>
+              </div>
+            </section>
+            <section id="africa-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">エルジェムの円形闘技場</h3>
+                <p class="showcase__kind-description">
+                  北アフリカのチュニジアにある巨大な円形闘技場は３世紀に作られたローマ遺跡。1979年に世界遺産に登録された。
+                  </p>
+              </div>
+            </section>
+            <section id="africa-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">カイロ歴史地区</h3>
+                <p class="showcase__kind-description">
+                  ナイル川のほとりにあるエジプトの首都カイロは、近代的な国際都市である一方、イスラム地区の旧市街とオールド・カイロでは昔ながらのエジプトの顔が見られる。
+                </p>
+              </div>
+            </section>
+
+          </div>
+          <!--/.tabs__content -->
+        </div>
+        <!--/.col-md-6 -->
+
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.showcase -->
+  </section>
+  <!--/.africa -->
+
+  <!-- 南米 -->
+  <section id="s-america" class="s-america">
+    <div class="s-america__phrase animated">南米の世界遺産</div>
+    <h2 class="s-america__title animated">South-America</h2>
+    <div class="showcase showcase--leftpic container-fluid tabs animated">
+      <div class="row">
+
+        <!-- 拡大写真 -->
+        <div class="tabs__content col-md-6 order-md-last text-center">
+          <div class="s-america-1">
+            <img class="img-fluid rounded" src="images/moai.jpg" width="500" height="500" alt="モアイ像">
+          </div>
+          <div class="s-america-2">
+            <img class="img-fluid rounded" src="images/machupichu.jpg" width="500" height="500" alt="マチュピチュ">
+          </div>
+          <div class="s-america-3">
+            <img class="img-fluid rounded" src="images/iguasu.jpg" width="500" height="500" alt="イグアス">
+          </div>
+        </div>
+        <!--/.tabs__content -->
+
+        <!-- サムネイルと説明文 -->
+        <div class="col-md-6 mt-2 mt-md-0">
+
+          <!-- サムネイル -->
+          <ul class="showcase__thumbnails tabs__menu">
+            <li><a href="#s-america-1"><img class="rounded" src="images/moai.jpg" width="60" height="60" alt="モアイ像"></a>
+            </li>
+            <li><a href="#s-america-2"><img class="rounded" src="images/machupichu.jpg" width="60" height="60" alt="マチュピチュ"></a>
+            </li>
+            <li><a href="#s-america-3"><img class="rounded" src="images/iguasu.jpg" width="60" height="60" alt="イグアス"></a>
+            </li>
+          </ul>
+          <!--/.showcase__thumbnails -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content">
+            <section id="s-america-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ラパ・ヌイ国立公園</h3>
+                <p class="showcase__kind-description">
+                  チリのイースター島、ラパ・ヌイ国立公園には、13世紀〜16世紀にかけて先住民が作った約900体のモアイ像が点在。ラパ・ヌイは、先住民の言葉で「大きい島」という意味。
+                </p>
+              </div>
+            </section>
+            <section id="s-america-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">マチュピチュ</h3>
+                <p class="showcase__kind-description">
+                  ペルーのアンデス山脈に位置するマチュピチュは、標高2400m付近にあり、「空中都市」とも呼ばれているインカ帝国の遺跡。15世紀に築かれ、インカ帝国滅亡から400年以上経ってから発見された為、「失われた都市」とも呼ばれている。
+                </p>
+              </div>
+            </section>
+            <section id="s-america-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">イグアスの滝</h3>
+                <p class="showcase__kind-description">
+                  世界三大瀑布のひとつ、イグアスの滝はアルゼンチンとブラジルの2カ国にまたがる世界最大の滝。11月〜4月の雨季には雨量が増し、その迫力は絶景。
+                </p>
+              </div>
+            </section>
+
+          </div>
+          <!--/.tabs__content -->
+        </div>
+        <!--/.col-md-6 -->
+
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.showcase -->
+  </section>
+  <!--/.s-america -->
+
+  <!-- オセアニア -->
+  <section id="oceania" class="oceania">
+    <div class="oceania__phrase animated">オセアニアの世界遺産</div>
+    <h2 class="oceania__title animated">Oceania</h2>
+    <div class="showcase showcase--rightpic container-fluid tabs animated">
+      <div class="row">
+
+        <!-- 拡大写真 -->
+        <div class="tabs__content col-md-6 text-center">
+          <div class="oceania-1">
+            <img class="img-fluid rounded" src="images/ururu.jpg" width="500" height="500" alt="ウルル">
+          </div>
+          <div class="oceania-2">
+            <img class="img-fluid rounded" src="images/great.jpg" width="500" height="500" alt="グレートバリアリーフ">
+          </div>
+          <div class="oceania-3">
+            <img class="img-fluid rounded" src="images/opera.jpg" width="500" height="500" alt="オペラハウス">
+          </div>
+        </div>
+        <!--/.tabs__content -->
+
+        <!-- サムネイルと説明文 -->
+        <div class="col-md-6 mt-2 mt-md-0">
+
+          <!-- サムネイル -->
+          <ul class="showcase__thumbnails tabs__menu">
+            <li><a href="#oceania-1"><img class="rounded" src="images/ururu.jpg" width="60" height="60" alt="ウルル"></a>
+            </li>
+            <li><a href="#oceania-2"><img class="rounded" src="images/great.jpg" width="60" height="60" alt="グレートバリアリーフ"></a>
+            </li>
+            <li><a href="#oceania-3"><img class="rounded" src="images/opera.jpg" width="60" height="60" alt="オペラハウス"></a>
+            </li>
+          </ul>
+          <!--/.showcase__thumbnails -->
+
+          <!-- 説明文 -->
+          <div class="tabs__content">
+            <section id="oceania-1">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">ウルル、カタ・ジュタ国立公園</h3>
+                <p class="showcase__kind-description">
+                  ウルル（エアーズロック）は世界最大級の巨大な一枚岩でできた山。先住民族のアボリジニの聖地ウルル周辺には、彼らの神話や生活が描かれた壁画が残っている。
+
+                </p>
+              </div>
+            </section>
+            <section id="oceania-2">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">グレートバリアリーフ</h3>
+                <p class="showcase__kind-description">
+                  オーストラリア北東岸に広がるグレートバリアリーフは、全長2,300kmに広がる世界最大級の珊瑚礁地帯。600 種類を超えるサンゴ礁と何百もの島々からなり、無数のカラフルな魚、軟体動物、ヒトデ、カメ、イルカ、サメが生息している。
+                </p>
+              </div>
+            </section>
+            <section id="oceania-3">
+              <div class="showcase__details">
+                <h3 class="showcase__kind-name">シドニー・オペラハウス</h3>
+                <p class="showcase__kind-description">
+                シドニー・オペラハウスは、オーストラリアにある総合芸術劇場。1956年の国際設計コンペで、32カ国233件の応募作品の中からデンマークの建築家ヨルン・ウッツォンの設計案として選ばれた。2007年に世界遺産に登録され、20世紀を代表する近代建築と言われている。
+                </p>
+              </div>
+            </section>
+
+          </div>
+          <!--/.tabs__content -->
+        </div>
+        <!--/.col-md-6 -->
+
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.showcase -->
+  </section>
+  <!--/.oceania -->
+
+  <!--js-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="main.js"></script>
+
+  <!--fontawesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</body>
