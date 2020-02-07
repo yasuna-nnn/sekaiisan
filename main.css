@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+body {
+  padding-top: 50px;
+  color: #3f3f3f;
+  background-color: #e0ffff;
+  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
+}
+
+/*カルーセルの表示エリア*/
+
+.carousel {
+  /*子要素でposition:absoluteを使うために必要*/
+  position: relative;
+
+  /*800×400の領域からはみ出た部分は非表示*/
+  overflow: hidden;
+  width: 800px;
+  height: 400px;
+
+  /*左右中央寄せ*/
+  margin: 0 auto;
+}
+
+/*矢印の基本スタイル*/
+
+.carousel-control {
+  display: block;
+  height: 50px;
+  width: 30px;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  opacity: .5;
+
+  /*透明度をふわっと変える演出*/
+  transition: opacity .15s;
+}
+
+/*マウスが乗ったら濃くする*/
+
+.carousel-control:hover {
+  opacity: .8;
+}
+
+/*左矢印*/
+
+.carousel-control-prev {
+  position: absolute;
+  left: 0;
+  top: 175px;
+  text-indent: -3px;
+  padding-top: 3px;
+  /*矢印の横方向の位置を調整する*/
+}
+
+/*右矢印*/
+
+.carousel-control-next {
+  position: absolute;
+  right: 0;
+  top: 175px;
+  text-indent: -3px;
+  padding-top: 3px;
+}
+
+/*スライドのul*/
+
+.slides {
+  /*.carouselの左上すみに表示*/
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*横に長いひと続きの写真にする*/
+  width: 99999px;
+
+  /*ulのデフォルトスタイルを消去*/
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*各スライドを横につなげる*/
+
+.slides li {
+  float: left;
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+}
+
+.box {
+  position: absolute;
+  width: 550px;
+  height: 80px;
+  line-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  /* 背景色のみ50%透明 */
+  background-color: rgba(255, 255, 255, 0.5);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.box h2 {
+  /*position: absolute;*/
+  font-size: 50px;
+  letter-spacing: 10px;
+  /*z-index: 2;*/
+  /*-ms-transform: translate(-50%, -50%);*/
+  /*-webkit-transform: translate(-50%, -50%);*/
+  /*transform: translate(-50%, -50%);*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  font-style: oblique;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+/*
+ *-------------
+ *トップここまで
+ *-------------
+ */
+
+/*
+ *------------
+ *世界遺産タブここから
+ *------------
+ */
+
+.tabs__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.tabs__menu li {
+  display: inline-block;
+  margin-bottom: 12px;
+  opacity: 0.5;
+
+}
+
+.tabs__menu a {
+  display: block;
+  color: #557f95;
+  text-decoration: none;
+}
+
+/* 非選択のタブにマウスを乗せたら色を変える */
+
+.tabs__menu li:not(.active):hover {
+  opacity: 0.7;
+}
+
+/* 選択中のタブ */
+
+.tabs__menu .active {
+  opacity: 1;
+}
+
+.tabs__menu .active a {
+  color: #3f4548;
+}
+
+/* 各タブのコンテンツはデフォルトで非表示 */
+
+.tabs__content section {
+  display: none;
+}
+
+.tabs__content section.active {
+  display: block;
+}
+
+/*
+ * -------------------------------
+ * 世界遺産タブ - ここまで
+ * -------------------------------
+ */
+
+/* Bootstrapのmd以上の表示幅で適用されるスタイル */
+
+@media (min-width: 768px) {
+  .top__catchphrase {
+    font-size: 1.125rem;
+  }
+
+
+  .asia {
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #edffdb;
+  }
+
+  .europe {
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #ffffe0;
+  }
+
+  .africa {
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #ffdbdb;
+  }
+
+  .s-america {
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #ffdbff;
+  }
+
+  .oceania {
+    padding-top: 82px;
+    padding-bottom: 92px;
+    background: #dbedff;
+  }
+
+  .asia__phrase,
+  .europe__phrase,
+  .africa__phrase,
+  .s-america__phrase,
+  .oceania__phrase {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.79px;
+  }
+
+  .asia__title,
+  .europe__title,
+  .africa__title,
+  .s-america__title,
+  .oceania__title {
+    margin-bottom: 37px;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+  }
+
+
+  .showcase {
+    /* 左右中央に置く */
+    margin: 0 auto;
+
+    width: 88%;
+    max-width: 840px;
+  }
+
+  .showcase__details {
+    /* 左右中央に置く */
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .showcase__kind-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .showcase__kind-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .showcase--leftpic .showcase__thumbnails {
+    text-align: left;
+  }
+  .showcase--rightpic .showcase__thumbnails {
+    text-align: right;
+  }
+
+  .showcase--rightpic .showcase__kind-name {
+    text-align: right;
+  }
+
+  .showcase__details {
+    max-width: 320px;
+  }
+  .showcase--leftpic .showcase__details {
+    margin: 0 auto 0 0;
+  }
+  .showcase--rightpic .showcase__details {
+    margin: 0 0 0 auto;
+  }
+}
